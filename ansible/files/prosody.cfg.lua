@@ -274,57 +274,57 @@ Component ("groups."..DOMAIN) "muc"
 	muc_registration_include_form = true
 
 	default_mucs = {
-		-- {
-		-- 	jid_node = "general";
-        --     affiliations = {
-        --         owner = { "admin@chat.podverse.fm" }
-        --     },
-		-- 	config = {
-		-- 		name = "general";
-		-- 		description = "Welcome to "..DOMAIN.." general chat!";
-		-- 		change_subject = false;
-		-- 		history_length = 100;
-		-- 		members_only = false;
-		-- 		moderated = false;
-		-- 		persistent = true;
-		-- 		public = true;
-		-- 		public_jids = true;
-		-- 	};
-		-- },
-		-- {
-		-- 	jid_node = "dev";
-        --     affiliations = {
-        --         owner = { "admin@chat.podverse.fm" }
-        --     },
-		-- 	config = {
-		-- 		name = "dev";
-		-- 		description = "Welcome to "..DOMAIN.." dev chat!";
-		-- 		change_subject = false;
-		-- 		history_length = 100;
-		-- 		members_only = false;
-		-- 		moderated = false;
-		-- 		persistent = true;
-		-- 		public = true;
-		-- 		public_jids = true;
-		-- 	};
-		-- },
-		-- {
-		-- 	jid_node = "translations";
-        --     affiliations = {
-        --         owner = { "admin@chat.podverse.fm" }
-        --     },
-		-- 	config = {
-		-- 		name = "translations";
-		-- 		description = "Welcome to "..DOMAIN.." translations chat!";
-		-- 		change_subject = false;
-		-- 		history_length = 100;
-		-- 		members_only = false;
-		-- 		moderated = false;
-		-- 		persistent = true;
-		-- 		public = true;
-		-- 		public_jids = true;
-		-- 	};
-		-- }
+		{
+			jid_node = "general";
+            affiliations = {
+                owner = { "admin@chat.podverse.fm" }
+            },
+			config = {
+				name = "general";
+				description = "Welcome to "..DOMAIN.." general chat!";
+				change_subject = false;
+				history_length = 100;
+				members_only = false;
+				moderated = false;
+				persistent = true;
+				public = true;
+				public_jids = true;
+			};
+		},
+		{
+			jid_node = "dev";
+            affiliations = {
+                owner = { "admin@chat.podverse.fm" }
+            },
+			config = {
+				name = "dev";
+				description = "Welcome to "..DOMAIN.." dev chat!";
+				change_subject = false;
+				history_length = 100;
+				members_only = false;
+				moderated = false;
+				persistent = true;
+				public = true;
+				public_jids = true;
+			};
+		},
+		{
+			jid_node = "translations";
+            affiliations = {
+                owner = { "admin@chat.podverse.fm" }
+            },
+			config = {
+				name = "translations";
+				description = "Welcome to "..DOMAIN.." translations chat!";
+				change_subject = false;
+				history_length = 100;
+				members_only = false;
+				moderated = false;
+				persistent = true;
+				public = true;
+				public_jids = true;
+			};
+		}
 	}
 
 Component ("share."..DOMAIN) "http_file_share"
