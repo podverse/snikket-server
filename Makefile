@@ -5,7 +5,7 @@ DOCS := $(docs/**.md)
 all: docker
 
 docker:
-	docker build -t snikket .
+	docker build -t podverse/snikket-server .
 
 site: mkdocs.yml $(DOCS)
 	echo $(DOCS)
