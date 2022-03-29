@@ -285,7 +285,7 @@ Component ("groups."..DOMAIN) "muc"
 				change_subject = false;
 				history_length = 100;
 				members_only = false;
-				moderated = true;
+				moderated = false;
 				persistent = true;
 				public = true;
 				public_jids = true;
@@ -302,7 +302,7 @@ Component ("groups."..DOMAIN) "muc"
 				change_subject = false;
 				history_length = 100;
 				members_only = false;
-				moderated = true;
+				moderated = false;
 				persistent = true;
 				public = true;
 				public_jids = true;
@@ -319,7 +319,7 @@ Component ("groups."..DOMAIN) "muc"
 				change_subject = false;
 				history_length = 100;
 				members_only = false;
-				moderated = true;
+				moderated = false;
 				persistent = true;
 				public = true;
 				public_jids = true;
