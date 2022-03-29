@@ -255,7 +255,11 @@ Component ("groups."..DOMAIN) "muc"
 		"muc_auto_reserve_nicks";
 	}
 	restrict_room_creation = "local"
-	muc_local_only = { "general@groups."..DOMAIN }
+	muc_local_only = {
+        "general@groups."..DOMAIN,
+        "dev@groups."..DOMAIN,
+        "translations@groups."..DOMAIN
+    }
 
 	-- Default configuration for rooms (typically overwritten by the client)
 	muc_room_default_allow_member_invites = true
@@ -272,13 +276,50 @@ Component ("groups."..DOMAIN) "muc"
 	default_mucs = {
 		{
 			jid_node = "general";
+            affiliations = {
+                owner = { "admin@chat.podverse.fm" }
+            },
 			config = {
-				name = "General Chat";
+				name = "general";
 				description = "Welcome to "..DOMAIN.." general chat!";
 				change_subject = false;
-				history_length = 30;
+				history_length = 100;
 				members_only = false;
-				moderated = false;
+				moderated = true;
+				persistent = true;
+				public = true;
+				public_jids = true;
+			};
+		},
+		{
+			jid_node = "dev";
+            affiliations = {
+                owner = { "admin@chat.podverse.fm" }
+            },
+			config = {
+				name = "dev";
+				description = "Welcome to "..DOMAIN.." dev chat!";
+				change_subject = false;
+				history_length = 100;
+				members_only = false;
+				moderated = true;
+				persistent = true;
+				public = true;
+				public_jids = true;
+			};
+		},
+		{
+			jid_node = "translations";
+            affiliations = {
+                owner = { "admin@chat.podverse.fm" }
+            },
+			config = {
+				name = "translations";
+				description = "Welcome to "..DOMAIN.." translations chat!";
+				change_subject = false;
+				history_length = 100;
+				members_only = false;
+				moderated = true;
 				persistent = true;
 				public = true;
 				public_jids = true;
