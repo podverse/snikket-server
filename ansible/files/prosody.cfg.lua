@@ -254,17 +254,12 @@ Component ("groups."..DOMAIN) "muc"
 		"snikket_restricted_users";
 		"muc_auto_reserve_nicks";
 	}
-	restrict_room_creation = "local"
-	muc_local_only = {
-        "general@groups."..DOMAIN,
-        "dev@groups."..DOMAIN,
-        "translations@groups."..DOMAIN
-    }
+	restrict_room_creation = "admin"
 
 	-- Default configuration for rooms (typically overwritten by the client)
 	muc_room_default_allow_member_invites = true
 	muc_room_default_persistent = true
-	muc_room_default_public = false
+	muc_room_default_public = true
 
 	-- Enable push notifications for offline group members by default
 	-- (this also requires mod_muc_auto_reserve_nicks in practice)
@@ -276,9 +271,6 @@ Component ("groups."..DOMAIN) "muc"
 	default_mucs = {
 		{
 			jid_node = "general";
-            affiliations = {
-                owner = { "admin@chat.podverse.fm" }
-            },
 			config = {
 				name = "general";
 				description = "Welcome to "..DOMAIN.." general chat!";
@@ -293,9 +285,6 @@ Component ("groups."..DOMAIN) "muc"
 		},
 		{
 			jid_node = "dev";
-            affiliations = {
-                owner = { "admin@chat.podverse.fm" }
-            },
 			config = {
 				name = "dev";
 				description = "Welcome to "..DOMAIN.." dev chat!";
@@ -310,9 +299,6 @@ Component ("groups."..DOMAIN) "muc"
 		},
 		{
 			jid_node = "translations";
-            affiliations = {
-                owner = { "admin@chat.podverse.fm" }
-            },
 			config = {
 				name = "translations";
 				description = "Welcome to "..DOMAIN.." translations chat!";
