@@ -253,6 +253,7 @@ Component ("groups."..DOMAIN) "muc"
 		"muc_offline_delivery";
 		"snikket_restricted_users";
 		"muc_auto_reserve_nicks";
+        -- "http_muc_log"; enable searchable logs for podverse xmpp someday
 	}
 	restrict_room_creation = "admin"
 
