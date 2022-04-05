@@ -254,6 +254,7 @@ Component ("groups."..DOMAIN) "muc"
 		"snikket_restricted_users";
 		"muc_auto_reserve_nicks";
         -- "http_muc_log"; enable searchable logs for podverse xmpp someday
+        -- "muc_restrict_media"; only allow authorized users to post images directly in chat
 	}
 	restrict_room_creation = "admin"
 
@@ -268,6 +269,12 @@ Component ("groups."..DOMAIN) "muc"
 	-- Include form in MUC registration query result (required for app
 	-- to detect whether push notifications are enabled)
 	muc_registration_include_form = true
+
+    -- TODO: http_muc_log
+    -- how do we setup storage with this?
+
+    -- TODO: muc_restrict_media
+    -- muc_room_default_restrict_media = true
 
 	default_mucs = {
 		{
